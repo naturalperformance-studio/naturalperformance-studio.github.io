@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="index, nofollow">
+<title>Just Remote — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1c1c1e;
+    --muted: #5b5b61;
+    --line: #dcdce0;
+    --panel: #f4f4f6;
+    --link: #0b57d0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121214;
+      --fg: #ececf0;
+      --muted: #a4a4ab;
+      --line: #34343a;
+      --panel: #1c1c20;
+      --link: #8ab4f8;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 44rem; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 0.5rem 0 0.25rem; }
+  h2 { font-size: 1.2rem; line-height: 1.3; margin: 2rem 0 0.5rem; }
+  p, ul { margin: 0.5rem 0; }
+  ul { padding-left: 1.25rem; }
+  li { margin: 0.3rem 0; }
+  a { color: var(--link); overflow-wrap: anywhere; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.92em; }
+  .meta { color: var(--muted); margin: 0 0 1rem; }
+  .langs { display: flex; gap: 1rem; padding: 0.5rem 0; border-bottom: 1px solid var(--line); }
+  .summary { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 0.75rem 1rem; margin: 1rem 0; }
+  .summary p { margin: 0.25rem 0; }
+  table { width: 100%; border-collapse: collapse; margin: 0.5rem 0; }
+  th, td { text-align: left; vertical-align: top; padding: 0.5rem 0.5rem 0.5rem 0; border-bottom: 1px solid var(--line); }
+  th { font-weight: 600; }
+  td code { overflow-wrap: anywhere; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 3rem 0 1rem; }
+  @media (max-width: 30rem) {
+    table, tbody, tr, th, td { display: block; }
+    thead { display: none; }
+    tr { border-bottom: 1px solid var(--line); padding: 0.4rem 0; }
+    td { border: 0; padding: 0.15rem 0; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<nav class="langs" aria-label="Language">
+  <a href="#en" hreflang="en">English</a>
+  <a href="#ru" hreflang="ru" lang="ru">Русский</a>
+</nav>
+
+<!-- ============================== ENGLISH ============================== -->
+<article id="en" lang="en">
+
+<h1>Just Remote — Privacy Policy</h1>
+<p class="meta">Developer: Natural Performance · Effective date: 8 October 2026</p>
+
+<div class="summary">
+  <p><strong>Just Remote collects nothing.</strong> It has no accounts, no ads, no analytics, no crash reporting and no tracking.</p>
+  <p>It talks only to devices on your home network — your TV and the other devices that answer its search for TVs. Nothing is sent to the internet, and nothing is sent to us. We, the developer, receive no data from the app.</p>
+</div>
+
+<p>This policy covers the Android app Just Remote, a remote control for TVs, published on Google Play by Natural Performance. It describes what the app does with information, as it is built.</p>
+
+<h2>What stays on your phone</h2>
+<p>To reconnect to your TV without asking it for permission every time, the app keeps on your phone:</p>
+<ul>
+  <li><strong>The TVs you paired:</strong> the name each TV reports about itself, its address on your home network, its network hardware (MAC) address if the TV reports one (used only to switch the TV on), an identifier the TV reports about itself, which connection it uses (encrypted or not, and on which port), and the pairing token the TV issued when you allowed the app on it.</li>
+  <li><strong>Which of your TVs you used last</strong>, so the app opens on it.</li>
+  <li><strong>The last list of apps each TV reported</strong> (app names and identifiers), so the list opens at once next time.</li>
+</ul>
+<p>This is kept in the app's private storage, which other apps cannot read. It is excluded from Android's cloud backup and from device-to-device transfer, so it is not copied to Google's servers or to a new phone.</p>
+<p><strong>Text you type</strong> in the app's keyboard is not saved by the app. It is sent to the TV's text field while you type and nowhere else. The on-screen keyboard you type with is a separate app on your phone (for example, the keyboard that came with it); it is covered by its own maker's privacy policy, not by this one.</p>
+
+<h2>How to delete it</h2>
+<ul>
+  <li><strong>Remove a TV</strong> (on the remote screen, “Remove TV”): the app deletes that TV's record and its pairing token. The list of that TV's apps is a separate cache and is not deleted at that moment: it stays in the app's private storage, holding only app names and identifiers, and is used again if you pair the same TV later.</li>
+  <li><strong>Uninstall the app</strong>, or clear its storage in Android settings (Settings → Apps → Just Remote → Storage → Clear storage): everything above is deleted, including all cached app lists.</li>
+  <li>Your TV keeps its own list of devices it has allowed, where the app appears as “Just Remote”. The app cannot change that list; you can remove the app from it in the TV's settings.</li>
+</ul>
+
+<h2>Network: who the app talks to</h2>
+<p>The app connects only to devices on your home network. It uses only Wi-Fi or Ethernet; when the phone has neither, the app does not connect to anything. It never uses mobile data or a VPN, does not use a proxy and does not follow redirects. It accepts only private home-network addresses (IPv4 ranges 10.x, 172.16–31.x, 192.168.x, and for search answers also 169.254.x). It sends nothing to any server on the internet, including ours.</p>
+<ul>
+  <li><strong>Finding TVs.</strong> While you look for a TV, the app sends a standard SSDP search message (the one used by smart TVs, speakers and printers) to the multicast address 239.255.255.250, port 1900, of your home network. Each device on the home network that answers is asked over HTTP, on port 8001, for its device description, to tell whether it is a supported TV (a device that is not recognised may be asked again during the same search). If you type a TV's address by hand, only a private home-network address is accepted.</li>
+  <li><strong>Controlling the TV.</strong> When you use the remote, the app connects to the TV's own address. It sends the buttons you press, the text you type in the app's keyboard, and requests to list and open the TV's apps; to identify itself it sends the app's name, “Just Remote”, and the pairing token. It receives the TV's answers, such as its list of apps. When pairing with a TV, the app tries the TV's encrypted connection first (TLS, port 8002) and then keeps using it. Whatever certificate is presented at the TV's address is accepted without verification, so this connection is encrypted but does not prove it is talking to your TV. Some older Samsung models (typically from 2016–2017) do not offer the encrypted connection and accept only an unencrypted connection (port 8001); with such a TV the app keeps using the unencrypted connection, so this traffic is not encrypted on your home network. Some requests to list and open apps go to the TV unencrypted over HTTP on port 8001 on all models.</li>
+  <li><strong>Turning the TV on.</strong> To switch on a TV in standby, the app sends a Wake-on-LAN packet that contains the TV's MAC address as a broadcast on your home network (UDP port 9). Every device on that network can receive it; it contains nothing else.</li>
+</ul>
+<p>What your TV does with what it receives, and anything the TV itself sends to its manufacturer, is governed by the TV maker's privacy policy, not by this one.</p>
+
+<h2>What the app does not do</h2>
+<ul>
+  <li>No accounts and no sign-in.</li>
+  <li>No ads and no advertising identifiers.</li>
+  <li>No analytics, no crash reporting, no tracking, no profiling, no personalisation.</li>
+  <li>No location, contacts, photos, microphone or camera.</li>
+  <li>No third-party code that sends data: the app is built only from Android's own libraries (AndroidX, Jetpack Compose), Kotlin libraries, and the OkHttp network library and its Okio helper, both from Square, which the app uses only to talk to your TV.</li>
+  <li>No selling or sharing of data with anyone: there is no data to sell or share.</li>
+</ul>
+
+<h2>Permissions</h2>
+<table>
+  <thead><tr><th>Permission</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td><code>INTERNET</code></td><td>Android requires it for any network connection, including connections to devices on your home network. The app uses it only for the home-network traffic described above.</td></tr>
+    <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>To see whether the phone is on Wi-Fi or Ethernet, so the app talks only over your home network and, without one, does not connect at all — never over mobile data or a VPN.</td></tr>
+    <tr><td><code>CHANGE_WIFI_MULTICAST_STATE</code></td><td>Lets the phone's Wi-Fi pass the search traffic while a search for TVs runs.</td></tr>
+    <tr><td><code>ACCESS_LOCAL_NETWORK</code></td><td>On Android 17 and later, Android blocks all traffic to devices on your home network without this permission; the app asks for it there. On earlier versions Android grants it without asking.</td></tr>
+    <tr><td><code>naturalperformance.just.remote.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code></td><td>Added automatically by Android's own AndroidX Core library. It lets only this app send itself internal broadcasts; it grants no access to any data.</td></tr>
+  </tbody>
+</table>
+
+<h2>Google Play</h2>
+<p>Google Play, the store you install the app from, collects its own information (such as installs, and diagnostic reports from people who agreed to share them with Google) under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. Google shows developers aggregated statistics in Google Play Console. The app itself adds nothing to this.</p>
+
+<h2>Children</h2>
+<p>The app collects no information from anyone, children included.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version is published at this address with a new effective date.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:naturalperformance.studio@gmail.com">naturalperformance.studio@gmail.com</a> (Natural Performance).</p>
+
+</article>
+
+<hr>
+
+<!-- ============================== РУССКИЙ ============================== -->
+<article id="ru" lang="ru">
+
+<h1>Just Remote — Политика конфиденциальности</h1>
+<p class="meta">Разработчик: Natural Performance · Действует с 8 октября 2026 года</p>
+
+<div class="summary">
+  <p><strong>Just Remote ничего не собирает.</strong> В нём нет аккаунтов, рекламы, аналитики, отчётов о сбоях и слежки.</p>
+  <p>Приложение общается только с устройствами в вашей домашней сети — с телевизором и с теми устройствами, которые отвечают на поиск телевизоров. В интернет не отправляется ничего, и нам тоже ничего не отправляется. Мы, разработчик, не получаем от приложения никаких данных.</p>
+</div>
+
+<p>Эта политика относится к Android-приложению Just Remote — пульту для телевизора, который Natural Performance публикует в Google Play. Она описывает, что приложение делает с информацией так, как оно устроено.</p>
+
+<h2>Что хранится на телефоне</h2>
+<p>Чтобы подключаться к телевизору, не спрашивая у него разрешения каждый раз, приложение хранит на телефоне:</p>
+<ul>
+  <li><strong>Подключённые телевизоры:</strong> имя, которое сообщает о себе каждый телевизор, его адрес в домашней сети, его аппаратный сетевой адрес (MAC), если телевизор его сообщает (нужен только чтобы включить телевизор), идентификатор, который телевизор сообщает о себе, какое соединение с ним используется (зашифрованное или нет и на каком порту), и токен сопряжения, который телевизор выдал, когда вы разрешили на нём приложение.</li>
+  <li><strong>Каким телевизором вы пользовались последним</strong> — чтобы приложение открывалось на нём.</li>
+  <li><strong>Последний список приложений каждого телевизора</strong> (названия и идентификаторы приложений) — чтобы в следующий раз список открылся сразу.</li>
+</ul>
+<p>Всё это лежит в закрытом хранилище приложения, которое другие приложения прочитать не могут. Оно исключено из облачной резервной копии Android и из переноса данных на другое устройство, поэтому не копируется ни на серверы Google, ни на новый телефон.</p>
+<p><strong>Текст, который вы набираете</strong> в клавиатуре приложения, приложение не сохраняет. Он отправляется в текстовое поле телевизора по мере набора — и больше никуда. Экранная клавиатура, которой вы набираете, — отдельное приложение на телефоне (например, та, что была на нём с завода); на неё распространяется политика её производителя, а не эта.</p>
+
+<h2>Как это удалить</h2>
+<ul>
+  <li><strong>Удалить телевизор</strong> (на экране пульта — «Удалить ТВ»): приложение удаляет запись об этом телевизоре и его токен сопряжения. Список приложений этого телевизора — отдельный кэш, и в этот момент он не удаляется: он остаётся в закрытом хранилище приложения, содержит только названия и идентификаторы приложений и снова используется, если вы позже подключите тот же телевизор.</li>
+  <li><strong>Удалить приложение</strong> или очистить его хранилище в настройках Android (Настройки → Приложения → Just Remote → Хранилище → Очистить хранилище): всё перечисленное выше удаляется, включая все сохранённые списки приложений.</li>
+  <li>Телевизор ведёт собственный список разрешённых устройств, где приложение значится как «Just Remote». Приложение не может изменить этот список; убрать приложение из него можно в настройках телевизора.</li>
+</ul>
+
+<h2>Сеть: с кем общается приложение</h2>
+<p>Приложение подключается только к устройствам в вашей домашней сети. Оно работает только через Wi-Fi или Ethernet; если у телефона нет ни того ни другого, приложение ни к чему не подключается. Оно никогда не использует мобильный интернет или VPN, не использует прокси и не переходит по перенаправлениям. Оно принимает только частные адреса домашней сети (диапазоны IPv4 10.x, 172.16–31.x, 192.168.x, а для ответов на поиск ещё 169.254.x). Оно ничего не отправляет ни на один сервер в интернете, в том числе на наши.</p>
+<ul>
+  <li><strong>Поиск телевизоров.</strong> Пока вы ищете телевизор, приложение отправляет стандартный поисковый запрос SSDP (тот же, что используют умные телевизоры, колонки и принтеры) на групповой адрес 239.255.255.250, порт 1900, вашей домашней сети. У каждого устройства домашней сети, которое ответило, приложение запрашивает по HTTP, на порту 8001, описание устройства — чтобы понять, поддерживаемый ли это телевизор (у нераспознанного устройства запрос за время поиска может повториться). Если вы вводите адрес телевизора вручную, принимается только частный адрес домашней сети.</li>
+  <li><strong>Управление телевизором.</strong> Когда вы пользуетесь пультом, приложение подключается к адресу самого телевизора. Оно отправляет нажатые кнопки, текст, набранный в клавиатуре приложения, и запросы на список и запуск приложений телевизора; чтобы представиться, оно отправляет своё название «Just Remote» и токен сопряжения. Оно получает ответы телевизора, например список его приложений. При сопряжении с телевизором приложение сначала пробует его зашифрованное соединение (TLS, порт 8002) и дальше пользуется им. Любой сертификат, предъявленный по адресу телевизора, принимается без проверки, поэтому соединение зашифровано, но не доказывает, что на другом конце именно ваш телевизор. Некоторые старые модели Samsung (обычно 2016–2017 годов) зашифрованное соединение не предлагают и принимают только незашифрованное соединение (порт 8001); с таким телевизором приложение и дальше пользуется незашифрованным соединением, поэтому этот обмен в домашней сети не зашифрован. Часть запросов на список и запуск приложений уходит телевизору без шифрования по HTTP на порт 8001 на всех моделях.</li>
+  <li><strong>Включение телевизора.</strong> Чтобы включить телевизор из режима ожидания, приложение рассылает в домашней сети широковещательный пакет Wake-on-LAN с MAC-адресом телевизора (UDP, порт 9). Его может получить любое устройство этой сети; ничего другого в нём нет.</li>
+</ul>
+<p>Что телевизор делает с полученным и что он сам отправляет своему производителю, определяет политика конфиденциальности производителя телевизора, а не эта.</p>
+
+<h2>Чего приложение не делает</h2>
+<ul>
+  <li>Нет аккаунтов и входа.</li>
+  <li>Нет рекламы и рекламных идентификаторов.</li>
+  <li>Нет аналитики, отчётов о сбоях, слежки, профилирования и персонализации.</li>
+  <li>Нет доступа к местоположению, контактам, фото, микрофону и камере.</li>
+  <li>Нет стороннего кода, который отправляет данные: приложение собрано только из собственных библиотек Android (AndroidX, Jetpack Compose), библиотек Kotlin, а также сетевой библиотеки OkHttp и её вспомогательной библиотеки Okio (обе от Square), которыми приложение пользуется только для связи с телевизором.</li>
+  <li>Никакой продажи и передачи данных кому-либо: продавать и передавать нечего.</li>
+</ul>
+
+<h2>Разрешения</h2>
+<table>
+  <thead><tr><th>Разрешение</th><th>Зачем</th></tr></thead>
+  <tbody>
+    <tr><td><code>INTERNET</code></td><td>Android требует его для любого сетевого соединения, в том числе с устройствами в домашней сети. Приложение использует его только для обмена в домашней сети, описанного выше.</td></tr>
+    <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Чтобы видеть, подключён ли телефон к Wi-Fi или Ethernet, общаться только через домашнюю сеть, а без неё не подключаться вовсе — никогда через мобильный интернет или VPN.</td></tr>
+    <tr><td><code>CHANGE_WIFI_MULTICAST_STATE</code></td><td>Позволяет Wi-Fi телефона пропускать трафик поиска, пока идёт поиск телевизоров.</td></tr>
+    <tr><td><code>ACCESS_LOCAL_NETWORK</code></td><td>В Android 17 и новее без этого разрешения Android блокирует любой обмен с устройствами домашней сети; там приложение его запрашивает. В более ранних версиях Android выдаёт его без запроса.</td></tr>
+    <tr><td><code>naturalperformance.just.remote.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code></td><td>Добавляется автоматически собственной библиотекой Android AndroidX Core. Позволяет только этому приложению отправлять самому себе внутренние оповещения; доступа к каким-либо данным не даёт.</td></tr>
+  </tbody>
+</table>
+
+<h2>Google Play</h2>
+<p>Google Play — магазин, из которого вы устанавливаете приложение, — собирает собственную информацию (например, об установках и диагностические отчёты от тех, кто согласился передавать их Google) по <a href="https://policies.google.com/privacy?hl=ru">Политике конфиденциальности Google</a>. Разработчикам Google показывает в Google Play Console сводную статистику. Само приложение ничего к этому не добавляет.</p>
+
+<h2>Дети</h2>
+<p>Приложение ни у кого не собирает информацию, в том числе у детей.</p>
+
+<h2>Изменения</h2>
+<p>Если политика изменится, новая версия будет опубликована по этому же адресу с новой датой вступления в силу.</p>
+
+<h2>Контакты</h2>
+<p>Вопросы об этой политике: <a href="mailto:naturalperformance.studio@gmail.com">naturalperformance.studio@gmail.com</a> (Natural Performance).</p>
+
+</article>
+
+</main>
+</body>
+</html>
