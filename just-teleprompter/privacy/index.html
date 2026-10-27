@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="index, nofollow">
+<title>Just Teleprompter — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1c1c1e;
+    --muted: #5b5b61;
+    --line: #dcdce0;
+    --panel: #f4f4f6;
+    --link: #0b57d0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121214;
+      --fg: #ececf0;
+      --muted: #a4a4ab;
+      --line: #34343a;
+      --panel: #1c1c20;
+      --link: #8ab4f8;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 44rem; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 0.5rem 0 0.25rem; }
+  h2 { font-size: 1.2rem; line-height: 1.3; margin: 2rem 0 0.5rem; }
+  p, ul { margin: 0.5rem 0; }
+  ul { padding-left: 1.25rem; }
+  li { margin: 0.3rem 0; }
+  a { color: var(--link); overflow-wrap: anywhere; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.92em; }
+  .meta { color: var(--muted); margin: 0 0 1rem; }
+  .langs { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; padding: 0.5rem 0; border-bottom: 1px solid var(--line); }
+  .summary { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 0.75rem 1rem; margin: 1rem 0; }
+  .summary p { margin: 0.25rem 0; }
+  table { width: 100%; border-collapse: collapse; margin: 0.5rem 0; }
+  th, td { text-align: left; vertical-align: top; padding: 0.5rem 0.5rem 0.5rem 0; border-bottom: 1px solid var(--line); }
+  th { font-weight: 600; }
+  td code { overflow-wrap: anywhere; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 3rem 0 1rem; }
+  @media (max-width: 30rem) {
+    table, tbody, tr, th, td { display: block; }
+    thead { display: none; }
+    tr { border-bottom: 1px solid var(--line); padding: 0.4rem 0; }
+    td { border: 0; padding: 0.15rem 0; }
+  }
+</style>
+</head>
+<body>
+<main>
+<nav class="langs" aria-label="Language">
+  <a href="#en" hreflang="en">English</a>
+  <a href="#ru" hreflang="ru" lang="ru">Русский</a>
+</nav>
+
+<!-- ============================== ENGLISH ============================== -->
+<article id="en" lang="en">
+
+<h1>Just Teleprompter — Privacy Policy</h1>
+<p class="meta">Developer: Natural Performance · Effective date: 27 October 2026</p>
+
+<div class="summary">
+  <p><strong>Just Teleprompter collects nothing.</strong> It has no accounts, no ads, no analytics, no crash reporting and no tracking.</p>
+  <p>The app has no permission to use the internet, so it cannot send anything anywhere. Your scripts are plain text files in a folder you choose. The sound from the microphone, used only when the text moves with your voice, is analysed on your phone as it comes in and is never recorded, saved or sent. We, the developer, receive no data from the app.</p>
+</div>
+
+<p>This policy covers the Android app Just Teleprompter, a teleprompter, published on Google Play by Natural Performance. It describes what the app does with information, as it is built.</p>
+
+<h2>Your scripts</h2>
+<p>Each script is a plain text file (<code>.txt</code>) in a folder you choose with Android's folder picker the first time one is needed. You can choose another folder at any time. Android gives the app access only to the folders you pick this way; access to a folder picked earlier stays until you uninstall the app or clear its storage.</p>
+<ul>
+  <li>The app reads the text files in that folder to list and show your scripts, and saves the scripts you write or edit there as text files, renaming a file when you rename its script. It never deletes a file, and choosing another folder moves nothing.</li>
+  <li>A text file (<code>.txt</code>), a Markdown file (<code>.md</code>, <code>.markdown</code>) or a Word document (<code>.docx</code>) that you open in the app from another app (“Open with”, “Share”) or pick with Import, and plain text you share with it, becomes a new script: the app reads it once and saves its text as a new <code>.txt</code> file in your folder, unless the folder already holds the same text. A file that cannot be read as text is skipped. The original is not changed.</li>
+  <li>To suggest a place for the folder, the app may create an empty folder <code>Documents/Just Teleprompter</code> before the folder picker opens; you can choose any other folder instead.</li>
+  <li>The script files stay in your folder if you uninstall the app. If the folder belongs to a cloud storage app, that app handles the files as it handles any others; Just Teleprompter itself sends nothing.</li>
+</ul>
+
+<h2>The microphone</h2>
+<p>The microphone is used only when the text moves with your voice (Scrolling: Voice, in the reading settings): the text moves while you speak and stops when you are silent. The app asks for microphone access only when you choose Voice there, and you can refuse; the text then moves at the speed you set, and everything else works without the microphone.</p>
+<ul>
+  <li>The microphone is on from the moment you start the text in Voice mode until you pause, the text reaches its end, or you leave the reading screen — including while you are silent and the text stands still, or while you hold it by hand. Leaving the app or locking the phone turns it off while you are away; if the text was not paused, the microphone turns back on when you return to the reading screen. In split screen it stays on while the reading screen is visible. It is never on when the reading screen is not in view.</li>
+  <li>The sound is read into the phone's memory in short pieces, analysed there for whether you are speaking and how fast, and replaced by the next piece. No words are recognised. The sound is never written to storage, never recorded and never sent anywhere.</li>
+  <li>While you read, the analysis keeps in memory only a short history of loudness levels (the last two seconds) and the times of recent syllables, and the numbers measured from them, such as the background noise level and your speaking pace. The app does not store any of this, and it is gone when you leave the reading screen.</li>
+</ul>
+
+<h2>What stays on your phone</h2>
+<p>To remember your choices between launches, the app keeps on your phone:</p>
+<ul>
+  <li><strong>Reading settings:</strong> the speed, the countdown, the text size, the margins, mirrored text, and whether the text moves at a set speed or with your voice.</li>
+  <li><strong>The folder you chose:</strong> Android's reference to it and the path the app shows.</li>
+  <li><strong>Unsaved changes in the editor</strong>, with the script's name and which file they belong to, from your first change until you save or discard them, so that nothing is lost if the app is closed. They are deleted once saved or discarded.</li>
+  <li><strong>Scripts on their way into the folder:</strong> the content of a file or text handed to the app, and the name it came under, are kept here while the script is being saved, so that nothing is lost if the app is closed midway, and for as long as there is no folder it can be saved into (none chosen yet, or the chosen one deleted, moved or no longer accessible). They are deleted from here once the script is in the folder.</li>
+</ul>
+<p>Nothing about how you use the app is recorded: no reading history, no counts, no times.</p>
+<p>All of this is kept in the app's private storage, which other apps cannot read. It is excluded from Android's cloud backup and from device-to-device transfer, so it is not copied to Google's servers or to a new phone. The script files themselves are not part of it: they are ordinary files in your folder.</p>
+
+<h2>How to delete it</h2>
+<ul>
+  <li><strong>Scripts:</strong> delete the files, or the whole folder, with a file manager or from a computer the phone is connected to. The app itself never deletes files, and uninstalling it leaves them in place, as well as the empty <code>Documents/Just Teleprompter</code> folder if the app created it.</li>
+  <li><strong>Everything under “What stays on your phone”:</strong> <strong>uninstall the app</strong>, or clear its storage in Android settings (Settings → Apps → Just Teleprompter → Storage → Clear storage).</li>
+</ul>
+
+<h2>Network</h2>
+<p>The app does not request Android's internet permission, so Android does not let it open any network connection. It contains no code that sends data, and it works the same with no connection at all. It sends nothing to us or to anyone else.</p>
+
+<h2>What the app does not do</h2>
+<ul>
+  <li>No accounts and no sign-in.</li>
+  <li>No ads and no advertising identifiers.</li>
+  <li>No analytics, no crash reporting, no tracking, no profiling, no personalisation.</li>
+  <li>No location, contacts, photos or camera, and no files other than those in the folders you picked and those you open in the app or share with it.</li>
+  <li>No Google Play services and no third-party code that collects data: the app is built only from Android's own libraries (AndroidX, Jetpack Compose) and Kotlin libraries.</li>
+  <li>No selling or sharing of data with anyone: there is no data to sell or share.</li>
+</ul>
+
+<h2>Permissions</h2>
+<table>
+  <thead><tr><th>Permission</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td><code>RECORD_AUDIO</code></td><td>For the text to move with your voice, as described above. Asked for only when you choose Voice in the reading settings.</td></tr>
+    <tr><td><code>naturalperformance.just.teleprompter.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code></td><td>Added automatically by Android's own AndroidX Core library. It lets only this app send itself internal broadcasts; it grants no access to any data.</td></tr>
+  </tbody>
+</table>
+<p>Access to your scripts folder is not one of these permissions: you give it to each folder you pick in Android's folder picker, and to nothing else. Files you open in the app or share with it come with access to those files only.</p>
+
+<h2>Google Play</h2>
+<p>Google Play, the store you install the app from, collects its own information (such as installs, and diagnostic reports from people who agreed to share them with Google) under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. Google shows developers aggregated statistics in Google Play Console. The app itself adds nothing to this.</p>
+
+<h2>Children</h2>
+<p>The app collects no information from anyone, children included.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version is published at this address with a new effective date, and the app's release notes on Google Play say that the policy has changed.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:naturalperformance.studio@gmail.com">naturalperformance.studio@gmail.com</a> (Natural Performance).</p>
+
+</article>
+
+<hr>
+
+<!-- ============================== РУССКИЙ ============================== -->
+<article id="ru" lang="ru">
+
+<h1>Just Teleprompter — Политика конфиденциальности</h1>
+<p class="meta">Это перевод для удобства; в том, в чём он расходится с <a href="#en" hreflang="en">английской версией</a>, действует английская версия.</p>
+<p class="meta">Разработчик: Natural Performance · Действует с 27 октября 2026 года</p>
+
+<div class="summary">
+  <p><strong>Just Teleprompter ничего не собирает.</strong> В нём нет аккаунтов, рекламы, аналитики, отчётов о сбоях и слежки.</p>
+  <p>У приложения нет разрешения на доступ к интернету, поэтому оно не может ничего никуда отправить. Ваши сценарии — обычные текстовые файлы в папке, которую вы выбрали сами. Звук с микрофона нужен только для прокрутки по голосу; он разбирается на телефоне по мере поступления и никогда не записывается, не сохраняется и не отправляется. Мы, разработчик, не получаем от приложения никаких данных.</p>
+</div>
+
+<p>Эта политика относится к Android-приложению Just Teleprompter — телесуфлёру, которое Natural Performance публикует в Google Play. Она описывает, что приложение делает с информацией так, как оно устроено.</p>
+
+<h2>Ваши сценарии</h2>
+<p>Каждый сценарий — обычный текстовый файл (<code>.txt</code>) в папке, которую вы выбираете в системном окне выбора папки, когда она впервые понадобится. Другую папку можно выбрать в любой момент. Android даёт приложению доступ только к папкам, выбранным так; доступ к выбранной раньше папке сохраняется, пока вы не удалите приложение или не очистите его хранилище.</p>
+<ul>
+  <li>Приложение читает текстовые файлы в этой папке, чтобы показать список сценариев и сами сценарии, и сохраняет туда текстовыми файлами то, что вы пишете и правите, а когда вы переименовываете сценарий, переименовывает его файл. Оно никогда не удаляет файлы, а при выборе другой папки ничего не переносит.</li>
+  <li>Текстовый файл (<code>.txt</code>), файл Markdown (<code>.md</code>, <code>.markdown</code>) или документ Word (<code>.docx</code>), который вы открыли в приложении из другого приложения («Открыть с помощью», «Поделиться») или выбрали кнопкой «Импорт», а также текст, которым вы поделились, становится новым сценарием: приложение один раз читает его и сохраняет текст новым файлом <code>.txt</code> в вашей папке, если такого же текста там ещё нет. Файл, который не читается как текст, пропускается. Исходный файл не меняется.</li>
+  <li>Чтобы предложить место для папки, приложение может создать пустую папку <code>Documents/Just Teleprompter</code> перед тем, как откроется окно выбора; вместо неё можно выбрать любую другую.</li>
+  <li>Если удалить приложение, файлы сценариев останутся в папке. Если папка принадлежит приложению облачного хранилища, оно обращается с этими файлами так же, как с любыми другими; сам Just Teleprompter ничего не отправляет.</li>
+</ul>
+
+<h2>Микрофон</h2>
+<p>Микрофон нужен только для прокрутки по голосу («Прокрутка» → «По голосу» в настройках чтения): текст идёт, пока вы говорите, и стоит, когда вы молчите. Приложение просит доступ к микрофону, только когда вы выбираете там «По голосу», и вы можете отказать: тогда текст идёт с заданной скоростью, а всё остальное работает и без микрофона.</p>
+<ul>
+  <li>Микрофон включён с момента, когда вы запускаете текст в режиме «По голосу», и до паузы, конца текста или ухода с экрана чтения — в том числе пока вы молчите и текст стоит или вы держите его рукой. Если вы выходите из приложения или блокируете телефон, микрофон на это время выключается; если текст не стоял на паузе, микрофон включается снова, когда вы возвращаетесь к экрану чтения. При разделённом экране он остаётся включённым, пока экран чтения виден. Когда экрана чтения перед вами нет, микрофон выключен.</li>
+  <li>Звук поступает в память телефона короткими фрагментами, там разбирается — говорите ли вы сейчас и в каком темпе — и заменяется следующим фрагментом. Слова не распознаются. Звук никогда не записывается в хранилище, не сохраняется как запись и никуда не отправляется.</li>
+  <li>Пока вы читаете, разбор держит в памяти только короткую историю уровней громкости (последние две секунды) и моменты последних слогов, а также числа, измеренные по ним, например уровень фонового шума и ваш темп речи. Приложение ничего из этого не сохраняет, и всё это пропадает, когда вы уходите с экрана чтения.</li>
+</ul>
+
+<h2>Что хранится на телефоне</h2>
+<p>Чтобы помнить ваш выбор между запусками, приложение хранит на телефоне:</p>
+<ul>
+  <li><strong>Настройки чтения:</strong> скорость, обратный отсчёт, размер текста, поля, зеркальный текст и то, как идёт текст — с заданной скоростью или по голосу.</li>
+  <li><strong>Выбранную папку:</strong> ссылку Android на неё и путь, который показывает приложение.</li>
+  <li><strong>Несохранённые правки в редакторе</strong> вместе с названием сценария и тем, к какому файлу они относятся, — с первой правки до сохранения или отмены, чтобы ничего не пропало, если приложение закроется. После сохранения или отмены они удаляются.</li>
+  <li><strong>Сценарии на пути в папку:</strong> содержимое файла или текста, переданного приложению, и имя, под которым он пришёл, хранятся здесь, пока сценарий сохраняется, — чтобы ничего не пропало, если приложение закроется на полпути, — и всё время, пока сохранить его некуда (папка ещё не выбрана или выбранную удалили, перенесли или доступ к ней пропал). Отсюда они удаляются, как только сценарий оказывается в папке.</li>
+</ul>
+<p>То, как вы пользуетесь приложением, никак не записывается: ни истории чтения, ни счётчиков, ни времени.</p>
+<p>Всё это лежит в закрытом хранилище приложения, которое другие приложения прочитать не могут. Оно исключено из облачной резервной копии Android и из переноса данных на другое устройство, поэтому не копируется ни на серверы Google, ни на новый телефон. Сами файлы сценариев сюда не входят: это обычные файлы в вашей папке.</p>
+
+<h2>Как это удалить</h2>
+<ul>
+  <li><strong>Сценарии:</strong> удалите файлы или всю папку в файловом менеджере или с компьютера, к которому подключён телефон. Само приложение файлы не удаляет, и после удаления приложения они остаются на месте, как и пустая папка <code>Documents/Just Teleprompter</code>, если приложение её создало.</li>
+  <li><strong>Всё, что перечислено в разделе «Что хранится на телефоне»:</strong> <strong>удалите приложение</strong> или очистите его хранилище в настройках Android (Настройки → Приложения → Just Teleprompter → Хранилище → Очистить хранилище).</li>
+</ul>
+
+<h2>Сеть</h2>
+<p>Приложение не запрашивает разрешение Android на доступ к интернету, поэтому Android не даёт ему открыть ни одного сетевого соединения. В нём нет кода, который отправляет данные, и без связи оно работает точно так же. Оно ничего не отправляет ни нам, ни кому-либо ещё.</p>
+
+<h2>Чего приложение не делает</h2>
+<ul>
+  <li>Нет аккаунтов и входа.</li>
+  <li>Нет рекламы и рекламных идентификаторов.</li>
+  <li>Нет аналитики, отчётов о сбоях, слежки, профилирования и персонализации.</li>
+  <li>Нет доступа к местоположению, контактам, фото и камере, а из файлов — ни к чему, кроме выбранных вами папок и файлов, которые вы сами открыли в приложении или передали ему.</li>
+  <li>Нет сервисов Google Play и стороннего кода, который собирает данные: приложение собрано только из собственных библиотек Android (AndroidX, Jetpack Compose) и библиотек Kotlin.</li>
+  <li>Никакой продажи и передачи данных кому-либо: продавать и передавать нечего.</li>
+</ul>
+
+<h2>Разрешения</h2>
+<table>
+  <thead><tr><th>Разрешение</th><th>Зачем</th></tr></thead>
+  <tbody>
+    <tr><td><code>RECORD_AUDIO</code></td><td>Для прокрутки по голосу, как описано выше. Запрашивается, только когда вы выбираете «По голосу» в настройках чтения.</td></tr>
+    <tr><td><code>naturalperformance.just.teleprompter.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code></td><td>Добавляется автоматически собственной библиотекой Android AndroidX Core. Позволяет только этому приложению отправлять самому себе внутренние оповещения; доступа к каким-либо данным не даёт.</td></tr>
+  </tbody>
+</table>
+<p>Доступ к папке сценариев — не одно из этих разрешений: вы даёте его к каждой папке, которую выбираете в системном окне выбора папки, и ни к чему больше. Файлы, которые вы открываете в приложении или передаёте ему, приходят с доступом только к ним самим.</p>
+
+<h2>Google Play</h2>
+<p>Google Play — магазин, из которого вы устанавливаете приложение, — собирает собственную информацию (например, об установках и диагностические отчёты от тех, кто согласился передавать их Google) по <a href="https://policies.google.com/privacy?hl=ru">Политике конфиденциальности Google</a>. Разработчикам Google показывает в Google Play Console сводную статистику. Само приложение ничего к этому не добавляет.</p>
+
+<h2>Дети</h2>
+<p>Приложение ни у кого не собирает информацию, в том числе у детей.</p>
+
+<h2>Изменения</h2>
+<p>Если политика изменится, новая версия будет опубликована по этому же адресу с новой датой вступления в силу, а в описании обновления в Google Play будет сказано, что политика изменилась.</p>
+
+<h2>Контакты</h2>
+<p>Вопросы об этой политике: <a href="mailto:naturalperformance.studio@gmail.com">naturalperformance.studio@gmail.com</a> (Natural Performance).</p>
+
+</article>
+
+</main>
+</body>
+</html>
