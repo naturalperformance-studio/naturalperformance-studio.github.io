@@ -73,7 +73,7 @@
 
 <div class="summary">
   <p><strong>Just Teleprompter collects nothing.</strong> It has no accounts, no ads, no analytics, no crash reporting and no tracking.</p>
-  <p>The app has no permission to use the internet, so it cannot send anything anywhere. Your scripts are plain text files in a folder you choose. The sound from the microphone, used only when the text moves with your voice, is analysed on your phone as it comes in and is never recorded, saved or sent. We, the developer, receive no data from the app.</p>
+  <p>The app has no permission to use the internet, so it cannot send anything anywhere. Your scripts are plain text files in a folder you choose. The sound from the microphone, when the text moves with your voice, is analysed on your phone as it comes in and is never recorded, saved or sent. A video you record on the recording screen is saved on your phone and is never sent anywhere. We, the developer, receive no data from the app.</p>
 </div>
 
 <p>This policy covers the Android app Just Teleprompter, a teleprompter, published on Google Play by Natural Performance. It describes what the app does with information, as it is built.</p>
@@ -88,11 +88,18 @@
 </ul>
 
 <h2>The microphone</h2>
-<p>The microphone is used only when the text moves with your voice (Scrolling: Voice, in the reading settings): the text moves while you speak and stops when you are silent. The app asks for microphone access only when you choose Voice there, and you can refuse; the text then moves at the speed you set, and everything else works without the microphone.</p>
+<p>The microphone is used when the text moves with your voice (Scrolling: Voice, in the reading settings): the text moves while you speak and stops when you are silent. It also records the sound of the videos you record on the recording screen (see “Videos you record”). The app asks for microphone access when you choose Voice there, or together with the camera when you open the recording screen, and you can refuse; the text then moves at the speed you set, and everything else except the recording screen works without the microphone. When the text moves with your voice:</p>
 <ul>
   <li>The microphone is on from the moment you start the text in Voice mode until you pause, the text reaches its end, or you leave the reading screen — including while you are silent and the text stands still, or while you hold it by hand. Leaving the app or locking the phone turns it off while you are away; if the text was not paused, the microphone turns back on when you return to the reading screen. In split screen it stays on while the reading screen is visible. It is never on when the reading screen is not in view.</li>
   <li>The sound is read into the phone's memory in short pieces, analysed there for whether you are speaking and how fast, and replaced by the next piece. No words are recognised. The sound is never written to storage, never recorded and never sent anywhere.</li>
   <li>While you read, the analysis keeps in memory only a short history of loudness levels (the last two seconds) and the times of recent syllables, and the numbers measured from them, such as the background noise level and your speaking pace. The app does not store any of this, and it is gone when you leave the reading screen.</li>
+</ul>
+
+<h2>Videos you record</h2>
+<p>On the recording screen, nothing is recorded until you press Record. From the end of the countdown until you press Stop or leave the screen, the app records a video from the camera you chose, with sound from the microphone. The script on the screen is not in the video, and the app adds no watermark.</p>
+<ul>
+  <li>Each video is saved as an ordinary MP4 file named after the script and the time it started, in the <code>Movies/Just Teleprompter</code> folder of your phone's storage, where your gallery and other apps that show videos find it. On Android 8 and 9 it is saved in <code>Movies/Just Teleprompter</code> inside the app's own folder on the phone's storage (<code>Android/data/naturalperformance.just.teleprompter/files</code>), and Android deletes it when you uninstall the app.</li>
+  <li>The app never sends a video anywhere. Open, after a video is saved, hands it to a video player on your phone.</li>
 </ul>
 
 <h2>What stays on your phone</h2>
@@ -109,6 +116,7 @@
 <h2>How to delete it</h2>
 <ul>
   <li><strong>Scripts:</strong> delete the files, or the whole folder, with a file manager or from a computer the phone is connected to. The app itself never deletes files, and uninstalling it leaves them in place, as well as the empty <code>Documents/Just Teleprompter</code> folder if the app created it.</li>
+  <li><strong>Videos:</strong> delete them in your gallery or with a file manager. Uninstalling the app leaves them in place, except on Android 8 and 9, where they are deleted with the app's own folder.</li>
   <li><strong>Everything under “What stays on your phone”:</strong> <strong>uninstall the app</strong>, or clear its storage in Android settings (Settings → Apps → Just Teleprompter → Storage → Clear storage).</li>
 </ul>
 
@@ -120,7 +128,7 @@
   <li>No accounts and no sign-in.</li>
   <li>No ads and no advertising identifiers.</li>
   <li>No analytics, no crash reporting, no tracking, no profiling, no personalisation.</li>
-  <li>No location, contacts, photos or camera, and no files other than those in the folders you picked and those you open in the app or share with it.</li>
+  <li>No location, contacts or photos, and no files other than those in the folders you picked, those you open in the app or share with it, and the videos it records.</li>
   <li>No Google Play services and no third-party code that collects data: the app is built only from Android's own libraries (AndroidX, Jetpack Compose) and Kotlin libraries.</li>
   <li>No selling or sharing of data with anyone: there is no data to sell or share.</li>
 </ul>
@@ -129,7 +137,8 @@
 <table>
   <thead><tr><th>Permission</th><th>Why</th></tr></thead>
   <tbody>
-    <tr><td><code>RECORD_AUDIO</code></td><td>For the text to move with your voice, as described above. Asked for only when you choose Voice in the reading settings.</td></tr>
+    <tr><td><code>RECORD_AUDIO</code></td><td>For the text to move with your voice, and for the sound of the videos you record, as described above. Asked for when you choose Voice in the reading settings, or together with the camera when you open the recording screen.</td></tr>
+    <tr><td><code>CAMERA</code></td><td>To show the camera's picture on the recording screen, which the Record video key on the reading screen opens, and to record videos there. Asked for, together with the microphone, when you open that screen. Nothing is recorded until you press Record; the picture and the videos stay on your phone and are never sent anywhere.</td></tr>
     <tr><td><code>SYSTEM_ALERT_WINDOW</code></td><td>To show your script in a window over another app, such as the camera, when you open that window. Android asks you to allow it in its settings the first time. The window only shows the text: it records nothing, does not see what is under it and sends nothing anywhere.</td></tr>
     <tr><td><code>FOREGROUND_SERVICE</code></td><td>Keeps the window over other apps open while you use another app. While the window is open, Android may show a notification about it.</td></tr>
     <tr><td><code>FOREGROUND_SERVICE_SPECIAL_USE</code></td><td>The kind of service Android requires for a window over other apps. It grants no access to any data.</td></tr>
@@ -163,7 +172,7 @@
 
 <div class="summary">
   <p><strong>Just Teleprompter ничего не собирает.</strong> В нём нет аккаунтов, рекламы, аналитики, отчётов о сбоях и слежки.</p>
-  <p>У приложения нет разрешения на доступ к интернету, поэтому оно не может ничего никуда отправить. Ваши сценарии — обычные текстовые файлы в папке, которую вы выбрали сами. Звук с микрофона нужен только для прокрутки по голосу; он разбирается на телефоне по мере поступления и никогда не записывается, не сохраняется и не отправляется. Мы, разработчик, не получаем от приложения никаких данных.</p>
+  <p>У приложения нет разрешения на доступ к интернету, поэтому оно не может ничего никуда отправить. Ваши сценарии — обычные текстовые файлы в папке, которую вы выбрали сами. Звук с микрофона при прокрутке по голосу разбирается на телефоне по мере поступления и никогда не записывается, не сохраняется и не отправляется. Видео, которое вы записываете на экране записи, сохраняется на телефоне и никуда не отправляется. Мы, разработчик, не получаем от приложения никаких данных.</p>
 </div>
 
 <p>Эта политика относится к Android-приложению Just Teleprompter — телесуфлёру, которое Natural Performance публикует в Google Play. Она описывает, что приложение делает с информацией так, как оно устроено.</p>
@@ -178,11 +187,18 @@
 </ul>
 
 <h2>Микрофон</h2>
-<p>Микрофон нужен только для прокрутки по голосу («Прокрутка» → «По голосу» в настройках чтения): текст идёт, пока вы говорите, и стоит, когда вы молчите. Приложение просит доступ к микрофону, только когда вы выбираете там «По голосу», и вы можете отказать: тогда текст идёт с заданной скоростью, а всё остальное работает и без микрофона.</p>
+<p>Микрофон нужен для прокрутки по голосу («Прокрутка» → «По голосу» в настройках чтения): текст идёт, пока вы говорите, и стоит, когда вы молчите. Ещё он записывает звук видео, которое вы снимаете на экране записи (см. «Видео, которое вы записываете»). Приложение просит доступ к микрофону, когда вы выбираете там «По голосу» или вместе с камерой открываете экран записи, и вы можете отказать: тогда текст идёт с заданной скоростью, а всё остальное, кроме экрана записи, работает и без микрофона. При прокрутке по голосу:</p>
 <ul>
   <li>Микрофон включён с момента, когда вы запускаете текст в режиме «По голосу», и до паузы, конца текста или ухода с экрана чтения — в том числе пока вы молчите и текст стоит или вы держите его рукой. Если вы выходите из приложения или блокируете телефон, микрофон на это время выключается; если текст не стоял на паузе, микрофон включается снова, когда вы возвращаетесь к экрану чтения. При разделённом экране он остаётся включённым, пока экран чтения виден. Когда экрана чтения перед вами нет, микрофон выключен.</li>
   <li>Звук поступает в память телефона короткими фрагментами, там разбирается — говорите ли вы сейчас и в каком темпе — и заменяется следующим фрагментом. Слова не распознаются. Звук никогда не записывается в хранилище, не сохраняется как запись и никуда не отправляется.</li>
   <li>Пока вы читаете, разбор держит в памяти только короткую историю уровней громкости (последние две секунды) и моменты последних слогов, а также числа, измеренные по ним, например уровень фонового шума и ваш темп речи. Приложение ничего из этого не сохраняет, и всё это пропадает, когда вы уходите с экрана чтения.</li>
+</ul>
+
+<h2>Видео, которое вы записываете</h2>
+<p>На экране записи ничего не записывается, пока вы не нажмёте «Запись». С конца обратного отсчёта и до «Стоп» или ухода с экрана приложение записывает видео с выбранной вами камеры со звуком с микрофона. Сценария на экране в видео нет, и приложение не добавляет водяного знака.</p>
+<ul>
+  <li>Каждое видео сохраняется обычным файлом MP4 с названием сценария и временем начала в папке <code>Movies/Just Teleprompter</code> в памяти телефона — там его находят галерея и другие приложения, которые показывают видео. На Android 8 и 9 оно сохраняется в <code>Movies/Just Teleprompter</code> внутри собственной папки приложения в памяти телефона (<code>Android/data/naturalperformance.just.teleprompter/files</code>), и Android удаляет его вместе с приложением.</li>
+  <li>Приложение никуда не отправляет видео. «Открыть» после сохранения передаёт его проигрывателю видео на вашем телефоне.</li>
 </ul>
 
 <h2>Что хранится на телефоне</h2>
@@ -199,6 +215,7 @@
 <h2>Как это удалить</h2>
 <ul>
   <li><strong>Сценарии:</strong> удалите файлы или всю папку в файловом менеджере или с компьютера, к которому подключён телефон. Само приложение файлы не удаляет, и после удаления приложения они остаются на месте, как и пустая папка <code>Documents/Just Teleprompter</code>, если приложение её создало.</li>
+  <li><strong>Видео:</strong> удалите их в галерее или в файловом менеджере. После удаления приложения они остаются на месте, кроме Android 8 и 9, где они удаляются вместе с собственной папкой приложения.</li>
   <li><strong>Всё, что перечислено в разделе «Что хранится на телефоне»:</strong> <strong>удалите приложение</strong> или очистите его хранилище в настройках Android (Настройки → Приложения → Just Teleprompter → Хранилище → Очистить хранилище).</li>
 </ul>
 
@@ -210,7 +227,7 @@
   <li>Нет аккаунтов и входа.</li>
   <li>Нет рекламы и рекламных идентификаторов.</li>
   <li>Нет аналитики, отчётов о сбоях, слежки, профилирования и персонализации.</li>
-  <li>Нет доступа к местоположению, контактам, фото и камере, а из файлов — ни к чему, кроме выбранных вами папок и файлов, которые вы сами открыли в приложении или передали ему.</li>
+  <li>Нет доступа к местоположению, контактам и фото, а из файлов — ни к чему, кроме выбранных вами папок, файлов, которые вы сами открыли в приложении или передали ему, и видео, которое оно записывает.</li>
   <li>Нет сервисов Google Play и стороннего кода, который собирает данные: приложение собрано только из собственных библиотек Android (AndroidX, Jetpack Compose) и библиотек Kotlin.</li>
   <li>Никакой продажи и передачи данных кому-либо: продавать и передавать нечего.</li>
 </ul>
@@ -219,7 +236,8 @@
 <table>
   <thead><tr><th>Разрешение</th><th>Зачем</th></tr></thead>
   <tbody>
-    <tr><td><code>RECORD_AUDIO</code></td><td>Для прокрутки по голосу, как описано выше. Запрашивается, только когда вы выбираете «По голосу» в настройках чтения.</td></tr>
+    <tr><td><code>RECORD_AUDIO</code></td><td>Для прокрутки по голосу и для звука видео, которое вы записываете, как описано выше. Запрашивается, когда вы выбираете «По голосу» в настройках чтения, или вместе с камерой, когда вы открываете экран записи.</td></tr>
+    <tr><td><code>CAMERA</code></td><td>Чтобы показывать кадр с камеры на экране записи, который открывает кнопка «Записать видео» на экране чтения, и записывать там видео. Запрашивается вместе с микрофоном, когда вы открываете этот экран. Ничего не записывается, пока вы не нажмёте «Запись»; кадр и видео остаются на вашем телефоне и никуда не отправляются.</td></tr>
     <tr><td><code>SYSTEM_ALERT_WINDOW</code></td><td>Чтобы показать сценарий в окне поверх другого приложения, например камеры, когда вы открываете это окно. В первый раз Android просит разрешить это в своих настройках. Окно только показывает текст: оно ничего не записывает, не видит, что под ним, и ничего никуда не отправляет.</td></tr>
     <tr><td><code>FOREGROUND_SERVICE</code></td><td>Держит окно поверх других приложений открытым, пока вы пользуетесь другим приложением. Пока окно открыто, Android может показывать о нём уведомление.</td></tr>
     <tr><td><code>FOREGROUND_SERVICE_SPECIAL_USE</code></td><td>Вид службы, которого Android требует для окна поверх других приложений. Доступа к каким-либо данным не даёт.</td></tr>
