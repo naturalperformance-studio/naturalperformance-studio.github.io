@@ -130,6 +130,9 @@
   <thead><tr><th>Permission</th><th>Why</th></tr></thead>
   <tbody>
     <tr><td><code>RECORD_AUDIO</code></td><td>For the text to move with your voice, as described above. Asked for only when you choose Voice in the reading settings.</td></tr>
+    <tr><td><code>SYSTEM_ALERT_WINDOW</code></td><td>To show your script in a window over another app, such as the camera, when you open that window. Android asks you to allow it in its settings the first time. The window only shows the text: it records nothing, does not see what is under it and sends nothing anywhere.</td></tr>
+    <tr><td><code>FOREGROUND_SERVICE</code></td><td>Keeps the window over other apps open while you use another app. While the window is open, Android may show a notification about it.</td></tr>
+    <tr><td><code>FOREGROUND_SERVICE_SPECIAL_USE</code></td><td>The kind of service Android requires for a window over other apps. It grants no access to any data.</td></tr>
     <tr><td><code>naturalperformance.just.teleprompter.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code></td><td>Added automatically by Android's own AndroidX Core library. It lets only this app send itself internal broadcasts; it grants no access to any data.</td></tr>
   </tbody>
 </table>
@@ -217,6 +220,9 @@
   <thead><tr><th>Разрешение</th><th>Зачем</th></tr></thead>
   <tbody>
     <tr><td><code>RECORD_AUDIO</code></td><td>Для прокрутки по голосу, как описано выше. Запрашивается, только когда вы выбираете «По голосу» в настройках чтения.</td></tr>
+    <tr><td><code>SYSTEM_ALERT_WINDOW</code></td><td>Чтобы показать сценарий в окне поверх другого приложения, например камеры, когда вы открываете это окно. В первый раз Android просит разрешить это в своих настройках. Окно только показывает текст: оно ничего не записывает, не видит, что под ним, и ничего никуда не отправляет.</td></tr>
+    <tr><td><code>FOREGROUND_SERVICE</code></td><td>Держит окно поверх других приложений открытым, пока вы пользуетесь другим приложением. Пока окно открыто, Android может показывать о нём уведомление.</td></tr>
+    <tr><td><code>FOREGROUND_SERVICE_SPECIAL_USE</code></td><td>Вид службы, которого Android требует для окна поверх других приложений. Доступа к каким-либо данным не даёт.</td></tr>
     <tr><td><code>naturalperformance.just.teleprompter.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code></td><td>Добавляется автоматически собственной библиотекой Android AndroidX Core. Позволяет только этому приложению отправлять самому себе внутренние оповещения; доступа к каким-либо данным не даёт.</td></tr>
   </tbody>
 </table>
