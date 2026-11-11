@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="index, nofollow">
+<title>Just Voice Recorder — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1c1c1e;
+    --muted: #5b5b61;
+    --line: #dcdce0;
+    --panel: #f4f4f6;
+    --link: #0b57d0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121214;
+      --fg: #ececf0;
+      --muted: #a4a4ab;
+      --line: #34343a;
+      --panel: #1c1c20;
+      --link: #8ab4f8;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 44rem; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 0.5rem 0 0.25rem; }
+  h2 { font-size: 1.2rem; line-height: 1.3; margin: 2rem 0 0.5rem; }
+  p, ul { margin: 0.5rem 0; }
+  ul { padding-left: 1.25rem; }
+  li { margin: 0.3rem 0; }
+  a { color: var(--link); overflow-wrap: anywhere; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.92em; }
+  .meta { color: var(--muted); margin: 0 0 1rem; }
+  .langs { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; padding: 0.5rem 0; border-bottom: 1px solid var(--line); }
+  .summary { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 0.75rem 1rem; margin: 1rem 0; }
+  .summary p { margin: 0.25rem 0; }
+  table { width: 100%; border-collapse: collapse; margin: 0.5rem 0; }
+  th, td { text-align: left; vertical-align: top; padding: 0.5rem 0.5rem 0.5rem 0; border-bottom: 1px solid var(--line); }
+  th { font-weight: 600; }
+  td code { overflow-wrap: anywhere; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 3rem 0 1rem; }
+  @media (max-width: 30rem) {
+    table, tbody, tr, th, td { display: block; }
+    thead { display: none; }
+    tr { border-bottom: 1px solid var(--line); padding: 0.4rem 0; }
+    td { border: 0; padding: 0.15rem 0; }
+  }
+</style>
+</head>
+<body>
+<main>
+<nav class="langs" aria-label="Language">
+  <a href="#en" hreflang="en">English</a>
+  <a href="#ru" hreflang="ru" lang="ru">Русский</a>
+</nav>
+
+<!-- ============================== ENGLISH ============================== -->
+<article id="en" lang="en">
+
+<h1>Just Voice Recorder — Privacy Policy</h1>
+<p class="meta">Developer: Natural Performance · Effective date: 11 November 2026</p>
+
+<div class="summary">
+  <p>Just Voice Recorder collects nothing. It has no accounts, no ads, no analytics, no crash reporting and no tracking.</p>
+  <p>The app has no permission to use the internet, so it cannot send anything anywhere. Your recordings are ordinary audio files, and their texts ordinary text files, in a folder you choose. Speech is turned into text by your phone's own speech recognition, which the app asks to work on the phone only. We, the developer, receive no data from the app.</p>
+</div>
+
+<p>This policy covers the Android app Just Voice Recorder, a voice recorder with transcription, published on Google Play by Natural Performance. It describes what the app does with information, as it is built.</p>
+
+<h2>Your recordings</h2>
+<p>Recordings are kept in a folder you choose with Android's folder picker, which opens when you tap Choose folder on the app's first screen. You can choose another folder at any time (Recording settings → Another). Android gives the app access only to the folders you pick this way; access to a folder picked earlier stays until you uninstall the app or clear its storage. Choosing another folder moves no file.</p>
+<ul>
+  <li>To suggest a place for the folder, the app may create an empty folder before the folder picker opens: <code>Recordings/Just Voice Recorder</code> on Android 12 and later, <code>Music/Just Voice Recorder</code> on Android 11. You can choose any other folder instead.</li>
+  <li>The list in the app is the audio files in that folder, newest first, including files you put there yourself. To show it, the app reads the names, types, sizes and dates of the files in the folder and how long each audio file plays. It does not read the folder's subfolders.</li>
+  <li>While you record, the sound is written to a file named after the date and time the recording started (for example «2026-11-10 14-05.aac»), saved to the folder at least twice a second. When you stop, the app copies it, without re-encoding, into an <code>.m4a</code> file of the same name and then deletes the <code>.aac</code>. If that copy cannot be made, the <code>.aac</code> stays and is the recording. If the app is closed by Android or the phone turns off during a recording, the <code>.aac</code> stays in the folder and plays up to that moment; the next time you open the app, it turns that file into an <code>.m4a</code> in the same way. A recording stopped before any sound was written is deleted.</li>
+  <li>Trim saves the piece you choose as a new <code>.m4a</code> file in the same folder, named after the recording with «(trim)» («(обрезка)» when the app is in Russian). The original recording is only read, never changed.</li>
+  <li>A transcript is a plain text file (<code>.txt</code>, UTF-8) next to its recording, with the same name: one phrase per line, each with the time it starts, such as «[03:12] …». See «Turning speech into text».</li>
+  <li>Rename renames the recording and, if it has one, its text file with the same name. Delete asks once and then deletes the recording and its text file from the folder. A rename that only changes capital letters goes through a temporary name, «&lt;name&gt;~&lt;letters and digits&gt;.m4a».</li>
+  <li>Besides what you ask for by Rename, Delete or replacing a transcript, the app deletes only its own working files: the <code>.aac</code> once its <code>.m4a</code> is complete, and a new file (recording, piece or text) that it could not finish.</li>
+  <li>While a text file is being written, it first exists as a hidden file «.transcript-&lt;letters and digits&gt;.txt» and is renamed once complete. When you ask for a recording's text to be replaced, the old text file is first renamed to «&lt;name&gt;~&lt;letters and digits&gt;.txt» and deleted once the new one is in place. If the app is stopped in the middle of this, such a file can stay in the folder; you can delete it like any other file.</li>
+  <li>The files stay in your folder if you uninstall the app. If the folder belongs to a cloud storage app, or a cloud app syncs it, that app handles the files as it handles any others, including the <code>.aac</code> of a recording in progress; Just Voice Recorder itself sends nothing.</li>
+</ul>
+
+<h2>The microphone</h2>
+<p>The microphone is used for recording. The app asks for microphone access the first time you tap Record, or before the first transcription (see «Turning speech into text»). You can refuse; the list, playback, trimming, renaming, deleting and sharing then work without it.</p>
+<ul>
+  <li>The microphone is on from the moment you tap Record until you tap Stop. While the recording is paused, the app does not read the microphone; it reads it again when you resume.</li>
+  <li>The recording goes on with the screen off, while you use another app, and if you close the app from the recent apps. Meanwhile Android shows a notification («Recording» or «Paused») with Pause or Resume and Stop. If Android stops the recording service, the app stops the recording and saves it.</li>
+  <li>The sound from the microphone goes to the recording file. While live text is on (see below), the same sound also goes to your phone's speech recognition. Nothing else receives it. The level meter on the screen is worked out in memory and not stored.</li>
+  <li>The microphone is never on when no recording is under way. Transcribing a file does not turn it on.</li>
+</ul>
+
+<h2>Turning speech into text</h2>
+<p>Transcription uses the speech recognition built into your phone, through Android's interface for recognition on the device (available from Android 13). That recognition service is part of your phone's system software, provided by the phone's maker or by Google, and is governed by its provider's terms; it is not part of this app. The app asks it only for recognition on the phone, never for online recognition, and passes it the sound and the phone's language. The app itself sends nothing over a network: it has no internet permission. On phones older than Android 13, or without recognition on the device in the phone's language, transcription is not available and the app says so where you reach for it.</p>
+<ul>
+  <li><strong>Transcribing a recording.</strong> Nothing happens until you tap Transcribe in a recording's player. The app then reads the recording from your folder, turns it into plain sound in the phone's memory, and passes that sound to the phone's speech recognition. Android's speech recognition requires the app to have microphone access even for sound from a file, so the app asks for it before the first transcription; the microphone itself stays off. The phrases appear as they are recognised. While it runs, the app keeps in memory the phrases so far and up to the last minute of sound, so recognition can continue if it restarts. When the whole recording has been heard, the app writes the phrases to «&lt;name&gt;.txt» next to the recording. If no speech is found, no file is made. If you cancel, or it stops part-way, nothing is written. An existing text file is replaced only after you confirm «Transcribe again» → Replace.</li>
+  <li><strong>Live text.</strong> While recording, you can turn on live text. From then until you turn it off, pause or stop, the sound being recorded is also passed to the phone's speech recognition, and the words appear on the screen as you speak. The text is kept in memory and, when you stop, written to «&lt;name&gt;.txt» next to the recording; it never replaces an existing file. If the app is closed by Android before that, the text is lost and the recording is kept. The app remembers whether you left live text on, and turns it on again at the start of your next recording if the phone can transcribe.</li>
+  <li><strong>Transcription outside the app.</strong> A transcription goes on with the screen off or while you use another app. Meanwhile Android shows a notification with the recording's name, the progress and Cancel. Nothing is notified when it ends. Starting a recording stops a transcription, and nothing is written.</li>
+  <li><strong>Language packs.</strong> If the phone's speech recognition can recognise the phone's language but its pack is not on the phone, the app shows Download pack. Only when you tap it does the app ask that service to download the pack; the service downloads it over the internet under its provider's terms. The request names the language; no recording or text goes with it.</li>
+</ul>
+
+<h2>Sharing</h2>
+<p>Share, in a recording's player, opens Android's share sheet with that audio file. The app you pick there receives the file and permission to read it, and handles it under its own terms. Nothing is shared unless you pick an app. Text files are not shared from the app; they are ordinary files that any file manager or text editor can open.</p>
+
+<h2>What stays on your phone</h2>
+<p>To remember your choices between launches, the app keeps on your phone:</p>
+<ul>
+  <li>The folder you chose: Android's reference to it and the path the app shows.</li>
+  <li>The quality of new recordings (Speech, Standard or High).</li>
+  <li>Whether live text is on.</li>
+  <li>Whether you have once left the app during a recording (yes or no), so that a hint on the recording screen is no longer shown.</li>
+  <li>While a recording is under way: the name of its file and the time it started, so that a recording interrupted by a shutdown can be finished on the next launch. They are deleted once the recording is saved.</li>
+</ul>
+<p>In the app's cache it also keeps, for each recording you open in the player, the outline of its loudness that the player draws (1,000 numbers), so it is not worked out again. Each is stored under a name made from the file's address in the folder, its size and the time it was last changed, scrambled so that the name cannot be read back; it holds no sound and no words. The app does not delete these itself; Android may clear the cache when space runs low.</p>
+<p>Nothing else about how you use the app is recorded: no history of what you recorded, played or transcribed, and no counts.</p>
+<p>All of this is kept in the app's private storage, which other apps cannot read. It is excluded from Android's cloud backup and from device-to-device transfer, so it is not copied to Google's servers or to a new phone. Your recordings and text files are not part of it: they are ordinary files in your folder.</p>
+
+<h2>How to delete it</h2>
+<ul>
+  <li>Recordings and texts: delete them in the app (⋮ → Delete, which deletes a recording together with its text file), or delete the files, or the whole folder, with a file manager or from a computer the phone is connected to. Uninstalling the app leaves them in place, as well as the empty <code>Recordings/Just Voice Recorder</code> or <code>Music/Just Voice Recorder</code> folder if the app created it.</li>
+  <li>Everything under «What stays on your phone»: uninstall the app, or clear its storage in Android settings (Settings → Apps → Just Voice Recorder → Storage → Clear storage). Clear cache there deletes the loudness outlines only.</li>
+</ul>
+
+<h2>Network</h2>
+<p>The app does not request Android's internet permission, so Android does not let it open any network connection. It contains no code that sends data, and recording, playback, trimming and transcription work the same with no connection at all. It sends nothing to us or to anyone else. The only download it can start is a language pack, by the phone's speech recognition service, when you tap Download pack.</p>
+
+<h2>What the app does not do</h2>
+<ul>
+  <li>No accounts and no sign-in.</li>
+  <li>No ads and no advertising identifiers.</li>
+  <li>No analytics, no crash reporting, no tracking, no profiling, no personalisation.</li>
+  <li>No recording of calls, and no recording unless you tap Record.</li>
+  <li>No location, contacts or photos, and no files other than those in the folders you picked.</li>
+  <li>No online speech recognition: the app asks only for recognition on the phone.</li>
+  <li>No Google Play services and no third-party code that collects data: the app is built only from Android's own libraries (AndroidX, Jetpack Compose) and Kotlin libraries.</li>
+  <li>No selling or sharing of data with anyone: there is no data to sell or share.</li>
+</ul>
+
+<h2>Permissions</h2>
+<table>
+  <thead><tr><th>Permission</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td><code>RECORD_AUDIO</code></td><td>To record, and for live text, as described above. Also needed to transcribe a file, because Android's speech recognition requires it even for sound from a file; the microphone stays off then. Asked for the first time you tap Record, or before the first transcription.</td></tr>
+    <tr><td><code>FOREGROUND_SERVICE</code></td><td>Keeps a recording or a transcription going with the screen off or while you use another app. While it runs, Android shows a notification about it.</td></tr>
+    <tr><td><code>FOREGROUND_SERVICE_MICROPHONE</code></td><td>The kind of service Android requires for recording in the background. A transcription runs in the same kind of service, because Android's speech recognition checks the app's microphone access while it works. It grants no access to anything by itself.</td></tr>
+    <tr><td><code>POST_NOTIFICATIONS</code></td><td>To show the notification of a recording or a transcription in progress. On Android 13 and later it is asked for together with the microphone, the first time you tap Record. If you refuse, recording and transcription work the same, without the notification. The app sends no other notifications.</td></tr>
+    <tr><td><code>naturalperformance.just.voicerecorder.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code></td><td>Added automatically by Android's own AndroidX Core library. It lets only this app send itself internal broadcasts; it grants no access to any data.</td></tr>
+  </tbody>
+</table>
+<p>Access to your recordings folder is not one of these permissions: you give it to each folder you pick in Android's folder picker, and to nothing else.</p>
+
+<h2>Google Play</h2>
+<p>Google Play, the store you install the app from, collects its own information (such as installs, and diagnostic reports from people who agreed to share them with Google) under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. Google shows developers aggregated statistics in Google Play Console. The app itself adds nothing to this.</p>
+
+<h2>Children</h2>
+<p>The app collects no information from anyone, children included.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version is published at this address with a new effective date, and the app's release notes on Google Play say that the policy has changed.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:naturalperformance.studio@gmail.com">naturalperformance.studio@gmail.com</a> (Natural Performance).</p>
+
+</article>
+
+<hr>
+
+<!-- ============================== РУССКИЙ ============================== -->
+<article id="ru" lang="ru">
+
+<h1>Just Voice Recorder — Политика конфиденциальности</h1>
+<p class="meta">Это перевод для удобства; в том, в чём он расходится с <a href="#en" hreflang="en">английской версией</a>, действует английская версия.</p>
+<p class="meta">Разработчик: Natural Performance · Действует с 11 ноября 2026 года</p>
+
+<div class="summary">
+  <p>Just Voice Recorder ничего не собирает. В нём нет аккаунтов, рекламы, аналитики, отчётов о сбоях и слежки.</p>
+  <p>У приложения нет разрешения на доступ к интернету, поэтому оно не может ничего никуда отправить. Ваши записи — обычные аудиофайлы, а их тексты — обычные текстовые файлы в папке, которую вы выбрали сами. Речь превращает в текст встроенное распознавание речи вашего телефона, и приложение просит его работать только на телефоне. Мы, разработчик, не получаем от приложения никаких данных.</p>
+</div>
+
+<p>Эта политика относится к Android-приложению Just Voice Recorder — диктофону с расшифровкой, которое Natural Performance публикует в Google Play. Она описывает, что приложение делает с информацией так, как оно устроено.</p>
+
+<h2>Ваши записи</h2>
+<p>Записи хранятся в папке, которую вы выбираете в системном окне выбора папки; оно открывается, когда вы нажимаете «Выбрать папку» на первом экране приложения. Другую папку можно выбрать в любой момент (настройки записи → «Другая»). Android даёт приложению доступ только к папкам, выбранным так; доступ к выбранной раньше папке сохраняется, пока вы не удалите приложение или не очистите его хранилище. При выборе другой папки ни один файл не переносится.</p>
+<ul>
+  <li>Чтобы предложить место для папки, приложение может создать пустую папку перед тем, как откроется окно выбора: <code>Recordings/Just Voice Recorder</code> на Android 12 и новее, <code>Music/Just Voice Recorder</code> на Android 11. Вместо неё можно выбрать любую другую.</li>
+  <li>Список в приложении — это аудиофайлы в этой папке, новые сверху, в том числе файлы, которые вы положили туда сами. Чтобы его показать, приложение читает имена, типы, размеры и даты файлов в папке и длительность каждого аудиофайла. Вложенные папки оно не читает.</li>
+  <li>Во время записи звук пишется в файл, названный по дате и времени начала записи (например, «2026-11-10 14-05.aac»), и сохраняется в папку не реже двух раз в секунду. Когда вы нажимаете «Стоп», приложение без перекодирования копирует его в файл <code>.m4a</code> с тем же именем, а затем удаляет <code>.aac</code>. Если копию сделать не удалось, <code>.aac</code> остаётся и он и есть запись. Если Android закрыл приложение или телефон выключился во время записи, <code>.aac</code> остаётся в папке и играет до этого момента; при следующем запуске приложение так же превращает его в <code>.m4a</code>. Запись, остановленная раньше, чем был записан хоть какой-то звук, удаляется.</li>
+  <li>Обрезка сохраняет выбранный кусок новым файлом <code>.m4a</code> в той же папке, с именем записи и пометкой «(обрезка)» («(trim)», если приложение на английском). Исходная запись только читается и никогда не меняется.</li>
+  <li>Расшифровка — обычный текстовый файл (<code>.txt</code>, UTF-8) рядом с записью, с тем же именем: по фразе на строку, у каждой — время её начала, например «[03:12] …». См. «Как речь становится текстом».</li>
+  <li>«Переименовать» переименовывает запись и, если он есть, её текстовый файл с тем же именем. «Удалить» один раз спрашивает подтверждение, а затем удаляет из папки запись и её текстовый файл. Переименование, которое меняет только заглавные буквы, проходит через временное имя «&lt;имя&gt;~&lt;буквы и цифры&gt;.m4a».</li>
+  <li>Кроме того, о чём вы просите кнопками «Переименовать», «Удалить» и заменой расшифровки, приложение удаляет только свои рабочие файлы: <code>.aac</code>, когда готов его <code>.m4a</code>, и новый файл (запись, кусок или текст), который не удалось закончить.</li>
+  <li>Пока текстовый файл пишется, он существует как скрытый файл «.transcript-&lt;буквы и цифры&gt;.txt» и получает своё имя, когда готов. Когда вы просите заменить текст записи, старый текстовый файл сначала переименовывается в «&lt;имя&gt;~&lt;буквы и цифры&gt;.txt» и удаляется, когда новый уже на месте. Если приложение остановится посередине, такой файл может остаться в папке; его можно удалить, как любой другой.</li>
+  <li>Если удалить приложение, файлы останутся в папке. Если папка принадлежит приложению облачного хранилища или облачное приложение её синхронизирует, оно обращается с этими файлами так же, как с любыми другими, в том числе с <code>.aac</code> идущей записи; сам Just Voice Recorder ничего не отправляет.</li>
+</ul>
+
+<h2>Микрофон</h2>
+<p>Микрофон нужен для записи. Приложение просит доступ к микрофону, когда вы впервые нажимаете «Запись», или перед первой расшифровкой (см. «Как речь становится текстом»). Вы можете отказать: список, прослушивание, обрезка, переименование, удаление и «Поделиться» работают и без него.</p>
+<ul>
+  <li>Микрофон включён с момента, когда вы нажали «Запись», и до «Стоп». Пока запись на паузе, приложение не читает микрофон; после «Дальше» читает снова.</li>
+  <li>Запись продолжается при выключенном экране, пока вы пользуетесь другим приложением, и если вы закрыли приложение из списка недавних. В это время Android показывает уведомление («Идёт запись» или «Пауза») с кнопками «Пауза» или «Дальше» и «Стоп». Если Android остановит службу записи, приложение остановит запись и сохранит её.</li>
+  <li>Звук с микрофона идёт в файл записи. Пока включён живой текст (см. ниже), тот же звук идёт ещё и во встроенное распознавание речи телефона. Больше никуда. Уровень звука на экране считается в памяти и не сохраняется.</li>
+  <li>Когда запись не идёт, микрофон выключен. Расшифровка файла его не включает.</li>
+</ul>
+
+<h2>Как речь становится текстом</h2>
+<p>Для расшифровки используется распознавание речи, встроенное в ваш телефон, через интерфейс Android для распознавания на самом устройстве (он есть начиная с Android 13). Эта служба распознавания — часть системных программ телефона, её предоставляет производитель телефона или Google, и на неё распространяются условия её поставщика; частью этого приложения она не является. Приложение просит её только о распознавании на телефоне, никогда — о распознавании через интернет, и передаёт ей звук и язык телефона. Само приложение ничего не отправляет по сети: у него нет разрешения на доступ к интернету. На телефонах с Android старше 13 или без распознавания на устройстве для языка телефона расшифровка недоступна, и приложение говорит об этом там, где вы к ней тянетесь.</p>
+<ul>
+  <li><strong>Расшифровка записи.</strong> Ничего не происходит, пока вы не нажмёте «Расшифровать» в проигрывателе записи. Тогда приложение читает запись из вашей папки, превращает её в несжатый звук в памяти телефона и передаёт этот звук распознаванию речи телефона. Распознавание речи Android требует от приложения доступа к микрофону даже для звука из файла, поэтому приложение просит его перед первой расшифровкой; сам микрофон при этом выключен. Фразы появляются по мере распознавания. Пока расшифровка идёт, приложение держит в памяти уже готовые фразы и звук не больше чем за последнюю минуту, чтобы распознавание могло продолжиться, если начнётся заново. Когда запись прослушана целиком, приложение записывает фразы в «&lt;имя&gt;.txt» рядом с записью. Если речи не нашлось, файл не создаётся. Если вы отменили расшифровку или она остановилась на полпути, ничего не записывается. Существующий текстовый файл заменяется только после того, как вы подтвердите «Расшифровать заново» → «Заменить».</li>
+  <li><strong>Живой текст.</strong> Во время записи можно включить живой текст. С этого момента и до его выключения, паузы или «Стоп» записываемый звук передаётся ещё и распознаванию речи телефона, и слова появляются на экране, пока вы говорите. Текст хранится в памяти и после «Стоп» записывается в «&lt;имя&gt;.txt» рядом с записью; существующий файл он никогда не заменяет. Если Android закроет приложение раньше, текст пропадёт, а запись сохранится. Приложение помнит, оставили ли вы живой текст включённым, и включает его снова в начале следующей записи, если телефон может расшифровывать.</li>
+  <li><strong>Расшифровка вне приложения.</strong> Расшифровка продолжается при выключенном экране и когда вы пользуетесь другим приложением. В это время Android показывает уведомление с названием записи, ходом расшифровки и кнопкой «Отмена». О конце расшифровки уведомления нет. Если начать запись, расшифровка останавливается и ничего не записывается.</li>
+  <li><strong>Языковые пакеты.</strong> Если распознавание речи телефона знает язык телефона, но его пакета на телефоне нет, приложение показывает кнопку «Скачать пакет». Только когда вы её нажмёте, приложение попросит эту службу скачать пакет; служба скачивает его через интернет по условиям своего поставщика. В просьбе указан язык; ни записи, ни текст с ней не передаются.</li>
+</ul>
+
+<h2>«Поделиться»</h2>
+<p>«Поделиться» в проигрывателе записи открывает системное окно «Поделиться» с этим аудиофайлом. Приложение, которое вы там выберете, получает файл и разрешение его прочитать и обращается с ним по своим условиям. Пока вы не выбрали приложение, ничего не передаётся. Текстовыми файлами из приложения поделиться нельзя; это обычные файлы, которые откроет любой файловый менеджер или текстовый редактор.</p>
+
+<h2>Что хранится на телефоне</h2>
+<p>Чтобы помнить ваш выбор между запусками, приложение хранит на телефоне:</p>
+<ul>
+  <li>Выбранную папку: ссылку Android на неё и путь, который показывает приложение.</li>
+  <li>Качество новых записей («Речь», «Стандарт» или «Высокое»).</li>
+  <li>Включён ли живой текст.</li>
+  <li>Уходили ли вы хоть раз из приложения во время записи (да или нет) — чтобы больше не показывать подсказку на экране записи.</li>
+  <li>Пока идёт запись: имя её файла и время начала — чтобы запись, прерванную выключением, можно было закончить при следующем запуске. Они удаляются, как только запись сохранена.</li>
+</ul>
+<p>Во временных файлах (кэше) приложения хранится ещё, для каждой записи, которую вы открывали в проигрывателе, контур её громкости, который рисует проигрыватель (1000 чисел), чтобы не считать его заново. Каждый лежит под именем, которое получено из адреса файла в папке, его размера и времени последнего изменения и перемешано так, что прочитать их обратно нельзя; звука и слов в нём нет. Само приложение их не удаляет; Android может очистить кэш, когда мало места.</p>
+<p>Больше ничего о том, как вы пользуетесь приложением, не записывается: ни истории того, что вы записывали, слушали или расшифровывали, ни счётчиков.</p>
+<p>Всё это лежит в закрытом хранилище приложения, которое другие приложения прочитать не могут. Оно исключено из облачной резервной копии Android и из переноса данных на другое устройство, поэтому не копируется ни на серверы Google, ни на новый телефон. Ваши записи и текстовые файлы сюда не входят: это обычные файлы в вашей папке.</p>
+
+<h2>Как это удалить</h2>
+<ul>
+  <li>Записи и тексты: удалите их в приложении (⋮ → «Удалить» удаляет запись вместе с её текстовым файлом) или удалите файлы либо всю папку в файловом менеджере или с компьютера, к которому подключён телефон. После удаления приложения они остаются на месте, как и пустая папка <code>Recordings/Just Voice Recorder</code> или <code>Music/Just Voice Recorder</code>, если приложение её создало.</li>
+  <li>Всё, что перечислено в разделе «Что хранится на телефоне»: удалите приложение или очистите его хранилище в настройках Android (Настройки → Приложения → Just Voice Recorder → Хранилище → Очистить хранилище). «Очистить кэш» там удаляет только контуры громкости.</li>
+</ul>
+
+<h2>Сеть</h2>
+<p>Приложение не запрашивает разрешение Android на доступ к интернету, поэтому Android не даёт ему открыть ни одного сетевого соединения. В нём нет кода, который отправляет данные, и запись, прослушивание, обрезка и расшифровка без связи работают точно так же. Оно ничего не отправляет ни нам, ни кому-либо ещё. Единственная загрузка, которую оно может запустить, — языковой пакет, который скачивает служба распознавания речи телефона, когда вы нажимаете «Скачать пакет».</p>
+
+<h2>Чего приложение не делает</h2>
+<ul>
+  <li>Нет аккаунтов и входа.</li>
+  <li>Нет рекламы и рекламных идентификаторов.</li>
+  <li>Нет аналитики, отчётов о сбоях, слежки, профилирования и персонализации.</li>
+  <li>Не записывает звонки и ничего не записывает, пока вы не нажмёте «Запись».</li>
+  <li>Нет доступа к местоположению, контактам и фото, а из файлов — ни к чему, кроме выбранных вами папок.</li>
+  <li>Нет распознавания речи через интернет: приложение просит только о распознавании на телефоне.</li>
+  <li>Нет сервисов Google Play и стороннего кода, который собирает данные: приложение собрано только из собственных библиотек Android (AndroidX, Jetpack Compose) и библиотек Kotlin.</li>
+  <li>Никакой продажи и передачи данных кому-либо: продавать и передавать нечего.</li>
+</ul>
+
+<h2>Разрешения</h2>
+<table>
+  <thead><tr><th>Разрешение</th><th>Зачем</th></tr></thead>
+  <tbody>
+    <tr><td><code>RECORD_AUDIO</code></td><td>Для записи и для живого текста, как описано выше. Нужно и для расшифровки файла, потому что распознавание речи Android требует его даже для звука из файла; микрофон при этом выключен. Запрашивается, когда вы впервые нажимаете «Запись», или перед первой расшифровкой.</td></tr>
+    <tr><td><code>FOREGROUND_SERVICE</code></td><td>Держит запись или расшифровку при выключенном экране и когда вы пользуетесь другим приложением. Пока она идёт, Android показывает о ней уведомление.</td></tr>
+    <tr><td><code>FOREGROUND_SERVICE_MICROPHONE</code></td><td>Вид службы, которого Android требует для записи в фоне. Расшифровка идёт в службе того же вида, потому что распознавание речи Android проверяет доступ приложения к микрофону, пока работает. Само по себе доступа ни к чему не даёт.</td></tr>
+    <tr><td><code>POST_NOTIFICATIONS</code></td><td>Чтобы показывать уведомление об идущей записи или расшифровке. На Android 13 и новее запрашивается вместе с микрофоном, когда вы впервые нажимаете «Запись». Если отказать, запись и расшифровка работают так же, без уведомления. Других уведомлений приложение не присылает.</td></tr>
+    <tr><td><code>naturalperformance.just.voicerecorder.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code></td><td>Добавляется автоматически собственной библиотекой Android AndroidX Core. Позволяет только этому приложению отправлять самому себе внутренние оповещения; доступа к каким-либо данным не даёт.</td></tr>
+  </tbody>
+</table>
+<p>Доступ к папке с записями — не одно из этих разрешений: вы даёте его к каждой папке, которую выбираете в системном окне выбора папки, и ни к чему больше.</p>
+
+<h2>Google Play</h2>
+<p>Google Play — магазин, из которого вы устанавливаете приложение, — собирает собственную информацию (например, об установках и диагностические отчёты от тех, кто согласился передавать их Google) по <a href="https://policies.google.com/privacy?hl=ru">Политике конфиденциальности Google</a>. Разработчикам Google показывает в Google Play Console сводную статистику. Само приложение ничего к этому не добавляет.</p>
+
+<h2>Дети</h2>
+<p>Приложение ни у кого не собирает информацию, в том числе у детей.</p>
+
+<h2>Изменения</h2>
+<p>Если политика изменится, новая версия будет опубликована по этому же адресу с новой датой вступления в силу, а в описании обновления в Google Play будет сказано, что политика изменилась.</p>
+
+<h2>Контакты</h2>
+<p>Вопросы об этой политике: <a href="mailto:naturalperformance.studio@gmail.com">naturalperformance.studio@gmail.com</a> (Natural Performance).</p>
+
+</article>
+
+</main>
+</body>
+</html>
